@@ -109,3 +109,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 GRAPPELLI_ADMIN_TITLE = "PPC Admin"
 
+
+try:
+    from local_settings import *
+except:
+    pass
+   
